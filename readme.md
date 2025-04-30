@@ -3,12 +3,12 @@ I've sent Susan a video demo.
 I ran out of time, but it all works. :)
 
 **Working**:
-Users can add coffee products into the DB. Each coffee product has a suplier (currently jsut seeded via seeder.. no admin on that )
+ - Users can add coffee products into the DB. Each coffee product has a suplier (currently jsut seeded via seeder.. no admin on that )
 Set the price (in pennies), the currenciy, profit required, shipping cost.
 
-then the customer service person can record sales and if needed, change the cost (if directed by head office or whatever) per order.
+ - then the customer service person can record sales and if needed, change the cost (if directed by head office or whatever) per order.
 
-Livewire was used for the quick loading.
+ - Livewire was used for the quick loading.
 
 
 **Issues**:
@@ -18,8 +18,8 @@ Livewire was used for the quick loading.
 
 
 **TODOs**:
-DOCS!!!!
-Tests
-Prettification
-Better error handling
+ - DOCS!!!!
+ - Tests
+ - Prettification
+ - Better error handling
 
