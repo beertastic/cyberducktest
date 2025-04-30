@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SupplierController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,8 +25,12 @@ Route::get('/sales', function () {
     return view('coffee_sales');
 })->middleware(['auth'])->name('coffee.sales');
 
-Route::get('/shipping-partners', function () {
-    return view('shipping_partners');
-})->middleware(['auth'])->name('shipping.partners');
+Route::get('/shipping-partners', [SupplierController::class, 'index'])
+    ->middleware(['auth'])
+    ->name('shipping.partners');
+
+Route::post('/product/store', [ProductController::class, 'store'])
+    ->middleware(['auth'])
+    ->name('product.store');
 
 require __DIR__.'/auth.php';

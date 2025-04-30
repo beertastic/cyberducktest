@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Supplier;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -18,5 +19,13 @@ class DatabaseSeeder extends Seeder
             'name' => 'Sales Agent',
             'email' => 'sales@coffee.shop',
         ]);
+
+        Supplier::create([
+            'name' => 'Coffee-tastic'
+        ]);
+        Supplier::create([
+            'name' => 'JavaMan'
+        ]);
+
     }
 }
